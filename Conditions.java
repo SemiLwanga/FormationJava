@@ -17,8 +17,10 @@ package javaformation;
 
 public class Conditions 
 {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
         int value = 17;
+        
         if (value < 0)
         {
             System.out.println("value < 0");
@@ -37,7 +39,5 @@ public class Conditions
         
         else
             System.out.println("value vaut 15");
-
 	}
-
 }

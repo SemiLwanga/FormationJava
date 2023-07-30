@@ -21,8 +21,8 @@ package javaformation;
                               --A : pré-decrémentation
 */
 
-public class Operateurs {
-
+public class Operateurs 
+{
 	public static void main(String[] args) 
 	{
         int age = 24; // age <- 24
@@ -58,10 +58,7 @@ public class Operateurs {
         System.out.println(nb3);
         System.out.println(nb4);
 
-        boolean answer = 10 < 50;
+        boolean answer = 70 < 50;
         System.out.println(answer);
-
-
 	}
-
 }
