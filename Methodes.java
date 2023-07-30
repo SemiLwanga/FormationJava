@@ -4,17 +4,17 @@ public class Methodes
 {
 	public static void main(String[] args) 
 	{
-		int number = getNumberTwo();
+		String number = getNumberTwo();
 		System.out.println(number);	
 	}
 	 
-	public static int getNumberTwo()
+	public static String getNumberTwo()
 	{
 		boolean info = false;
 		if(info)
-			return 1;
+			return "Okay";
 		else
-			return 0;
+			return "Pas okay";
 
 	}
 }
