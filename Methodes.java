@@ -4,17 +4,13 @@ public class Methodes
 {
 	public static void main(String[] args) 
 	{
-		String number = getNumberTwo();
-		System.out.println(number);	
+		String msg = say("Hello !");
+		System.out.println(msg);
 	}
 	 
-	public static String getNumberTwo()
+	public static String say(String msg)
 	{
-		boolean info = false;
-		if(info)
-			return "Okay";
-		else
-			return "Pas okay";
-
+		System.out.println(msg);
+		return msg;
 	}
 }
