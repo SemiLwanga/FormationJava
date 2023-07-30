@@ -4,7 +4,7 @@ public  class App
 {
 	public static void main(String[] args)
 	{
-		Cat miaou = new Cat();
-		Cat miaou2 = new Cat();
+		Cat c1 = new Cat("Kito", 1);
+		Cat c2 = new Cat("Felix", 5);
 	}
 }

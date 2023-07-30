@@ -2,8 +2,13 @@ package javaformation;
 
 public class Cat
 {
-	public Cat()
+	public Cat(String name, int age)
 	{
-		System.out.println("Je suis un chat : " + this);
+		this.mName = name;
+		this.mAge = age;
+		
+		System.out.println(this.mName + " - " + this.mAge);
 	}
+	private String mName;
+	private int mAge;
 }
