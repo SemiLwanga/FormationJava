@@ -4,13 +4,11 @@ public class Methodes
 {
 	public static void main(String[] args) 
 	{
-		prog();
+		System.out.println(getNumberTwo());	
 	}
 	 
-	public static void prog() 
+	public static int getNumberTwo()
 	{
-		System.out.println("Bonjour");
-		System.out.println("Comment allez vous?");
-		System.out.println("Moi bien");
+		return 2;
 	}
 }
