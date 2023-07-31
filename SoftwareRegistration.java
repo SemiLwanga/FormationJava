@@ -2,27 +2,27 @@ package javaformation;
 
 public class SoftwareRegistration 
 {
-	/* 
-	 	[ACCESSEURS]
-	 		getters : accès à un attribut (lecture)
-	 		setters : modification d'un attribut
-	*/
 	public SoftwareRegistration(int expiration)
 	{
-		this.nExpirationYear = expiration;
-		System.out.println("Enregistrement du produit, valide jusqu'en " + this.nExpirationYear);
+		if (nNumberOfRegistrations > 0)
+		{
+			this.nExpirationYear = expiration;
+			nNumberOfRegistrations--;
+			
+			System.out.println("Logiciel valide (expiration : "+ this.nExpirationYear + ")");
+			System.out.println("Enregistrement restant : " + this.nNumberOfRegistrations);
+		}
+		else
+		{
+			System.out.println("Maximum de validations effectuees !");
+		}	
 	}
-	
 	public int getExpirationYear()
 	{
 		return this.nExpirationYear;
 	}
 	
-	public void setExpirationYear(int expiration)
-	{
-		this.nExpirationYear = expiration;
-	}
-	
-	private int nExpirationYear;
+	private static int nNumberOfRegistrations = 5;
+	private int nExpirationYear;  
 	
 }
