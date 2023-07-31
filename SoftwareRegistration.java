@@ -10,7 +10,7 @@ public class SoftwareRegistration
 			nNumberOfRegistrations--;
 			
 			System.out.println("Logiciel valide (expiration : "+ this.nExpirationYear + ")");
-			System.out.println("Enregistrement restant : " + this.nNumberOfRegistrations);
+			System.out.println("Enregistrements restants : " + this.nNumberOfRegistrations);
 		}
 		else
 		{
@@ -20,6 +20,11 @@ public class SoftwareRegistration
 	public int getExpirationYear()
 	{
 		return this.nExpirationYear;
+	}
+	
+	public static int getNumberOfRegistrations()
+	{
+		return nNumberOfRegistrations;
 	}
 	
 	private static int nNumberOfRegistrations = 5;
