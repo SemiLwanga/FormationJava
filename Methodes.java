@@ -4,13 +4,17 @@ public class Methodes
 {
 	public static void main(String[] args) 
 	{
-		String msg = say("Hello !");
-		System.out.println(msg);
+		System.out.println(sum(2, 5));
+		System.out.println(sum(2.3, 5.6));
 	}
-	 
-	public static String say(String msg)
+	
+	public static int sum(int a, int b)
 	{
-		System.out.println(msg);
-		return msg;
+		return a + b;
+	}
+	
+	public static double sum(double a, double b)
+	{
+		return a + b;
 	}
 }
